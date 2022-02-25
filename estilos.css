@@ -1,0 +1,48 @@
+/*Inline ocupa o espaço do texto e em bloco ocupa o espaço disponível na horizontal, elementos em bloco podemos definir altura largura e com inline isso não é possível*/
+body{
+    font-size:32px;
+}
+
+.nome-empresa{
+    background-color: pink;
+}
+
+.segmento-empresa{
+    background-color: red;
+}
+
+.curso-html{
+    background-color: #00dd00;
+}
+
+.curso-css {
+    background-color: #fdff11;
+}
+
+.curso-java{
+    background-color: #00dddd;
+}
+
+.curso-bootstrap {
+    background-color: #ee00da;
+}
+
+.nome-empresa, .segmento-empresa{
+    /*Quando defino como bloco posso fazer mudanças nos blocos*/
+    display:block;
+    height: 100px;
+    width: 300px;
+}
+
+.curso-html, .curso-css{
+    display:inline;
+    heigth: 100px;
+    width: 300px;
+}
+
+.curso-java, .curso-bootstrap{
+    /*Para conseguir alterar os blocos que ficam lado a lado com o modo inline é necessário inserir o INLINE-BLOCK*/
+    display:inline-block;
+    height: 100px;
+    width: 300px;
+}
